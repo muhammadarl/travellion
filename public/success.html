@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontends/libraries/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="frontends/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontends/libraries/gijgo/css/gijgo.min.css">
+    <link rel="stylesheet" href="frontends/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a href="#" class="navbar-brand">
+                <img src="frontends/images/logox2.png" alt="Logo Travellion">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navb">
+                <span class="navbar-toggler-icon"></span>    
+            </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a href="" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="" class="nav-link">Paket Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link1</a>
+                            <a href="#" class="dropdown-item">Link2</a>
+                            <a href="#" class="dropdown-item">Link3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="" class="nav-link">Testimonial</a>
+                    </li>
+                    <!--Mobile Button-->
+                    <form action="" class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0">
+                            Masuk
+                        </button>
+                    </form>
+                    <!--Desktop Button-->
+                    <form action="" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            Masuk
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </div>
+   <main>
+       <div class="section-success d-flex align-items-center">
+           <div class="col text-center">
+               <img src="frontends/images/ic-mailbox.png" alt="">
+               <h1>Yay! Success</h1>
+               <p>We've sent you email for trip instruction
+                   <br>
+                please read it as well
+               </p>
+               <a href="index.html" class="btn btn-home-page mt-3 px-5">
+                   Home Page
+               </a>
+           </div>
+       </div>
+   </main>
+    <script src="frontends/libraries/retina/retina.min.js"></script>
+    <script src="frontends/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontends/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontends/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontends/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth:500,
+                title:false,
+                tint:"#333",
+                Xoffset:15
+            });
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons:{
+                    rightIcon:'<img src="frontends/images/calendar-icon.png" width="18"/>'
+                }
+            })
+        });
+    </script>
+</body>
+</html>
